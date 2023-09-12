@@ -1,25 +1,8 @@
 /* App.css */
 
 /* Font Styles */
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  font-family: 'Times New Roman', serif;
-}
-
-h2 {
-  font-family: 'Helvetica', sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-  .Container {
-    flex-direction: column;
-  }
-  .SidePanel, .Content {
-    width: 100%;
-  }
+body, h1, h2 {
+  font-family: 'Bookman Old Style', serif; 
 }
 
 /* Main Container */
@@ -29,15 +12,23 @@ h2 {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f3f3f3;
+  background-color: #04572e; /* Darker green background color */
 }
 
 /* Title Panel */
 .TitlePanel {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff; /* White background color */
+  color: #04572e; /* Dark green text color */
   padding: 1rem;
   text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: background-color 0.3s ease; /* Smoother transition */
+  border-radius: 20px; /* Circular corners */
+}
+
+.TitlePanel h1 {
+  font-style: italic; /* Italicize the title */
 }
 
 /* Container */
@@ -51,13 +42,14 @@ h2 {
 /* Side Panel */
 .SidePanel {
   flex: 1;
-  background-color: #f8f8f8;
+  background-color: #ffffff; /* White background color */
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 20px; /* Circular corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .SidePanel h2 {
-  color: #333;
+  color: #04572e; /* Dark green text color */
 }
 
 .SidePanel ul {
@@ -73,18 +65,24 @@ h2 {
 .SidePanel a {
   color: #007bff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.SidePanel a:hover {
+  color: #04572e;
 }
 
 /* Content Panel */
 .Content {
   flex: 2;
-  background-color: #fff;
+  background-color: #ffffff; /* White background color */
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 20px; /* Circular corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Content h2 {
-  color: #333;
+  color: #04572e; /* Dark green text color */
 }
 
 .Content form {
@@ -95,24 +93,35 @@ h2 {
 .Content label {
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #333;
+  color: #04572e; /* Dark green text color */
 }
 
 .Content input,
 .Content textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 20px; /* Circular corners */
   margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.Content input:focus,
+.Content textarea:focus {
+  border-color: #04572e;
 }
 
 .Content button {
-  background-color: #007bff;
+  background-color: #04572e; /* Darker green background color */
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px; /* Circular corners */
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Content button:hover {
+  background-color: #034c24; /* Darker green on hover */
 }
 
 /* Responsive */
@@ -126,4 +135,10 @@ h2 {
   .Content {
     flex: auto;
   }
+}
+
+/* Adjust the Submit Tip Section */
+.Content form {
+  max-width: 400px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
 }
