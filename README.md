@@ -17,7 +17,7 @@ Welcome to the Camping & Survival Tips App! This is a web application that allow
 
 To run this project, you need to have the following software installed on your machine:
 
-- [Node.js](https://nodejs.org/) (version X.X or higher)
+- [Node.js](https://nodejs.org/) (version 20.50.1 or higher)
 - [MongoDB](https://www.mongodb.com/) (Make sure MongoDB is running on its default port)
 
 Additional Libraries' versions for Installation:
