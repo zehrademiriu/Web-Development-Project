@@ -1,9 +1,11 @@
-import express from 'express';
+/* importing libraries */
+
+import express from 'express'; /*for communication between back-end and front-end */
 import cors from 'cors';
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'; 
 
 const app = express();
-const port = 5000;
+const port = 5000; /*running server on 5000 */
 
 app.use(cors());
 app.use(express.json());
