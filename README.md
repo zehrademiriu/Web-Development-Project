@@ -20,6 +20,20 @@ To run this project, you need to have the following software installed on your m
 - [Node.js](https://nodejs.org/) (version X.X or higher)
 - [MongoDB](https://www.mongodb.com/) (Make sure MongoDB is running on its default port)
 
+Additional Libraries' versions for Installation:
+
+    "axios": "^1.4.0",
+    "cors": "latest",
+    "express": "latest",
+    "mongoose": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "tar": "^6.1.15",
+    "web-vitals": "^2.1.4"
+    
+
 ### Installation
 
 1. Clone this repository to your local machine:
