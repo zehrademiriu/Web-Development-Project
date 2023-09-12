@@ -1,7 +1,9 @@
+/*importing libraries*/
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+import './App.css'; /* getting interface design from App.css */
 import TipDetails from './tipdetails.mjs';
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
       setTips([...tips, response.data]);
       setNewTip({ title: '', content: '' });
     } catch (error) {
-      console.error('Error submitting tip:', error);
+      console.error('Error submitting tip:', error); /* try-catch for any erros */
     }
   };
 
@@ -56,7 +58,7 @@ function App() {
                 path="/"
                 element={
                   <div>
-                    <h2>Select a Tip from the SidePanel</h2>
+                    <h2>Select a tip from the panel</h2>
                     <form onSubmit={submitTip}>
                       <label>
                         Title:
@@ -82,9 +84,9 @@ function App() {
                       <button type="submit">Submit Tip</button>
                     </form>
                   </div>
-                }
+                }   /* tip ID for mongoDB relation */
               />
-              <Route path="/tips/:tipId" element={<TipDetails />} />
+              <Route path="/tips/:tipId" element={<TipDetails />} />   
             </Routes>
           </div>
         </div>
@@ -93,4 +95,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; /*exporting the app */
