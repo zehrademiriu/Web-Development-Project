@@ -25,9 +25,9 @@ To run this project, you need to have the following software installed on your m
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/camping-survival-tips-app.git
+   git clone https://github.com/your-username/Web-Development-Project.git
 
-   cd camping-survival-tips-app
+   cd Web-Development-Project
 
    npm install
 
